@@ -50,12 +50,12 @@ header#hd{padding: 15px 0; }
   background-color: black; top: calc(100% + 15px); left: 15px; padding: 0 15px; width: 100px;
   height: 0; transition: 0.5s; overflow: hidden;}
   #gnb .d2 a{font-size: 0.9em; line-height: 1.5; color: white;}
-
+  #gnb .d2:before{ content: ""; display: block; height: 15px;}
 #gnb li:nth-child(1) .d2{left:30px;}
 #gnb li:nth-child(4) .d2{width: 70px;}
 
 /* 마우스가 올라간 대메뉴 li속 소메뉴 .d2의 높이가 120이 되라  */
-#gnb > li:hover .d2{height: 120px;} /*display는 애니메이션 불가 */
+#gnb > li:hover .d2{height: 120px;} /*display는 애니메이션 불가 & 값이 auto도 애니 불가 --> keyframes도 안됨 */
 /* 마우스가 올라간 대메뉴 li속 대메뉴 a의 색상 처리 */
 #gnb > li:hover > a {color: #009688;}
 
