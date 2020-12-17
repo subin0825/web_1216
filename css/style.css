@@ -51,7 +51,7 @@ header#hd{padding: 15px 0; }
 #gnb li:nth-child(1) .d2{left:30px;}
 #gnb li:nth-child(4) .d2{width: 70px;}
 
-#gnb > li:hover .d2{display: block; height: 120px;}
+#gnb > li:hover .d2{height: 120px;} /*display는 애니메이션 불가 */
 
 section#main{}
 
