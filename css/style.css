@@ -38,10 +38,13 @@ img{display: block; border: none;}
 header#hd{padding: 15px 0; }
   /* 프로가 쓰는것  */
   #hd a, #hd img{display: block;}
-  #gnb > li{background: green; height: 46px;}
+  #gnb > li{
+            /* background: green;  */
+            height: 46px;}
   #gnb > li > a{
     font-weight: bold; font-size: 18px; line-height: 46px; padding-left: 2em;
-    padding-bottom: 15px; background: yellow}
+    padding-bottom: 15px;}
+    /* background: yellow} */
    /* 패딩/마진 left -> 패딩: 나 기준 글자사이 공백도 하버잡힘. 마진은 글자만 잡힘 */
   #gnb .d2{
   background-color: black; top: calc(100% + 15px); left: 15px; padding: 0 15px; width: 100px;
@@ -51,7 +54,10 @@ header#hd{padding: 15px 0; }
 #gnb li:nth-child(1) .d2{left:30px;}
 #gnb li:nth-child(4) .d2{width: 70px;}
 
+/* 마우스가 올라간 대메뉴 li속 소메뉴 .d2의 높이가 120이 되라  */
 #gnb > li:hover .d2{height: 120px;} /*display는 애니메이션 불가 */
+/* 마우스가 올라간 대메뉴 li속 대메뉴 a의 색상 처리 */
+#gnb > li:hover > a {color: #009688;}
 
 section#main{}
 
