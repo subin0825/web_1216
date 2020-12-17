@@ -35,18 +35,21 @@ img{display: block; border: none;}
 
 
 /* 레이아웃 */
-header#hd{padding: 15 0; }
+header#hd{padding: 15px 0; }
   /* 프로가 쓰는것  */
   #hd a, #hd img{display: block;}
-  #gnb > li > a{font-weight: bold; font-size: 18px; line-height: 46px; margin-left: 2em;}
+  #gnb > li{background: green; height: 46px;}
+  #gnb > li > a{
+    font-weight: bold; font-size: 18px; line-height: 46px; padding-left: 2em;
+    padding-bottom: 15px; background: yellow}
    /* 패딩/마진 left -> 패딩: 나 기준 글자사이 공백도 하버잡힘. 마진은 글자만 잡힘 */
   #gnb .d2
   {display: none;
-  background-color: black; top: 100%; left: 15px; padding: 10px 15px; width: 100px;}
+  background-color: black; top: calc(100% + 15px); left: 15px; padding: 10px 15px; width: 100px;}
   #gnb .d2 a{font-size: 0.9em; line-height: 1.5; color: white;}
 
 #gnb li:nth-child(1) .d2{left:30px;}
-#gnb li:nth-child(4) .d2{width: 80px;}
+#gnb li:nth-child(4) .d2{width: 70px;}
 
 #gnb > li:hover .d2{display: block;}
 section#main{}
